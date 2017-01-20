@@ -8,6 +8,7 @@ Camunda BPM examples is a collection of focused usage examples for the [camunda 
 | Camunda Version  | Link                                                                | Checkout command      |
 | -----------------|---------------------------------------------------------------------|-----------------------|
 | Latest           | [Master branch](https://github.com/camunda/camunda-bpm-examples)    | `git checkout master` |
+| 7.6              | [7.6 tag](https://github.com/camunda/camunda-bpm-examples/tree/7.6) | `git checkout 7.6`    |
 | 7.5              | [7.5 tag](https://github.com/camunda/camunda-bpm-examples/tree/7.5) | `git checkout 7.5`    |
 | 7.4              | [7.4 tag](https://github.com/camunda/camunda-bpm-examples/tree/7.4) | `git checkout 7.4`    |
 | 7.3              | [7.3 tag](https://github.com/camunda/camunda-bpm-examples/tree/7.3) | `git checkout 7.3`    |
@@ -64,23 +65,25 @@ If you clone this repository, use the checkout commands to access the sources fo
 
 ### Deployment & Project Setup Examples
 
-| Name                                                                       | Container            |  Keywords                 |
-| ---------------------------------------------------------------------------|----------------------|---------------------------|
-| [Process Application - Servlet](deployment/servlet-pa)                     | All                  | War, Servlet              |
-| [Process Application - EJB](deployment/ejb-pa)                             | JavaEE Containers    | Ejb, War                  |
-| [Process Application - Spring Servlet](deployment/spring-servlet-pa-jboss) | JBoss AS 7           | Spring, Servlet, War      |
-| [Embedded Spring with embedded REST](deployment/embedded-spring-rest)      | vanilla Apache Tomcat | Spring, Rest, Embedded   |
-| [Plain Spring Webapplication JBoss AS 7](deployment/spring-jboss-non-pa)   | JBoss AS 7           | Spring, Jndi, War         |
-| [Process Application - Spring Boot](deployment/spring-boot)                | Spring Boot          | Spring                    |
+| Name                                                                                          | Container             |  Keywords                 |
+| ----------------------------------------------------------------------------------------------|-----------------------|---------------------------|
+| [Process Application - Servlet](deployment/servlet-pa)                                        | All                   | War, Servlet              |
+| [Process Application - EJB](deployment/ejb-pa)                                                | JavaEE Containers     | Ejb, War                  |
+| [Process Application - Spring Servlet - JBoss](deployment/spring-servlet-pa-jboss)            | JBoss AS 7            | Spring, Servlet, War      |
+| [Process Application - Spring Servlet - Embedded Tomcat](deployment/spring-servlet-pa-tomcat) | Tomcat                | Spring, Servlet, War      |
+| [Embedded Spring with embedded REST](deployment/embedded-spring-rest)                         | vanilla Apache Tomcat | Spring, Rest, Embedded    |
+| [Plain Spring Webapplication JBoss AS 7](deployment/spring-jboss-non-pa)                      | JBoss AS 7            | Spring, Jndi, War         |
+| [Process Application - Spring Boot](deployment/spring-boot)                                   | Spring Boot           | Spring                    |
 
 
 ### Process Engine Plugin Examples
 
-| Name                                                                       | Container            |  Keywords                                   |
-| ---------------------------------------------------------------------------|----------------------|---------------------------------------------|
-| [BPMN Parse Listener](process-engine-plugin/bpmn-parse-listener)           | Unit Test            | Process Engine Plugin, Bpmn Parse Listener  |
-| [Custom History Level](process-engine-plugin/custom-history-level)         | Unit Test            | Process Engine Plugin, Custom History Level |
-| [Command Interceptor - Blocking](process-engine-plugin/command-interceptor-blocking) | Unit Test  | Maintenance, Interceptor, Configuration     |
+| Name                                                                                        | Container            |  Keywords                                   |
+| --------------------------------------------------------------------------------------------|----------------------|---------------------------------------------|
+| [BPMN Parse Listener](process-engine-plugin/bpmn-parse-listener)                            | Unit Test            | Process Engine Plugin, Bpmn Parse Listener  |
+| [BPMN Parse Listener on User Task](process-engine-plugin/bpmn-parse-listener-on-user-task)  | Unit Test            | Process Engine Plugin, Bpmn Parse Listener  |
+| [Custom History Level](process-engine-plugin/custom-history-level)                          | Unit Test            | Process Engine Plugin, Custom History Level |
+| [Command Interceptor - Blocking](process-engine-plugin/command-interceptor-blocking)        | Unit Test            | Maintenance, Interceptor, Configuration     |
 
 ### Bpmn 2.0 Model API Examples
 
